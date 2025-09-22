@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的个人主页</title>
+    <style>
+        body {
+            font-family: 仿宋;
+            background-color: #f0f8ff; /* 淡蓝色背景 */
+            color: #000; /* 黑色字体 */
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+            font-weight: bold; /* 全局加粗 */
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            border-bottom: 2px solid #4682b4; /* 钢蓝色下边框 */
+            background-color: #e6f7ff; /* 淡天蓝色背景 */
+            border-radius: 5px;
+        }
+        header h1 {
+            color: #1e90ff; /* 道奇蓝标题 */
+            margin: 0;
+        }
+        header h2 {
+            color: #4682b4; /* 钢蓝色副标题 */
+            margin: 5px 0 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #b0e0e6; /* 淡蓝色导航背景 */
+            padding: 10px;
+            margin: 20px 0;
+            border-radius: 5px;
+            font-weight: bold; /* 导航栏加粗（已被全局覆盖） */
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #000;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #1e90ff; /* 悬停时变为道奇蓝 */
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        .section {
+            width: 80%;
+            margin: 20px 0;
+            padding: 15px;
+            border: 1px solid #b0c4de; /* 浅钢蓝色边框 */
+            border-radius: 5px;
+            background-color: #f8f8ff; /* 幽灵白背景 */
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .section h3 {
+            color: #4682b4; /* 钢蓝色标题 */
+            border-bottom: 1px solid #b0c4de; /* 浅钢蓝色下划线 */
+            padding-bottom: 5px;
+            margin-top: 0;
+        }
+        .gallery {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .gallery-item {
+            width: 150px;
+            height: 150px;
+            border: 1px solid #b0c4de; /* 浅钢蓝色边框 */
+            margin: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #e6f7ff; /* 淡天蓝色背景 */
+            transition: transform 0.3s, background-color 0.3s;
+        }
+        .gallery-item:hover {
+            transform: scale(1.05); /* 悬停放大效果 */
+            background-color: #b0e0e6; /* 悬停时变为淡蓝色 */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome!</h1>
+        <h2>我的个人主页</h2>
+    </header>
+    <nav>
+        <a href="#">首页</a>
+        <a href="#">我的爱好</a>
+        <a href="#">我的学校</a>
+        <a href="#">联系方式</a>
+    </nav>
+    <div class="content">
+        <div class="section">
+            <h3>关于我</h3>
+            <p>姓名：韩同学</p>
+            <p>性别：女</p>
+            <p>年龄：19</p>
+            <p>性格：积极乐观</p>
+            <p>专业：计算机科学与技术</p>
+        </div>
+        <div class="section">
+            <h3>个人简介</h3>
+            <p>我是一个性格开朗的女生，对生活充满热情，做事沉稳负责。善于与人沟通，在校期间积极参与社团与兼职活动，有一定的社会实践经验。在班级中，积极乐意地为同学服务，在一定程度上锻炼了自己的能力。我做事情有计划和系统性，有较强的组织能力、实际动手能力和团体协作精神，能迅速适应各种环境，并融入其中。</p>
+        </div>
+        <div class="section">
+            <h3>我的爱好</h3>
+            <div class="gallery">
+                <div class="gallery-item">旅游</div>
+                <div class="gallery-item">拍照片</div>
+                <div class="gallery-item">读书</div>
+                <div class="gallery-item">羽毛球</div>
+                <div class="gallery-item">听音乐</div>
+            </div>
+        </div>
+        <div class="section">
+            <h3>我的技能</h3>
+            <p>视频剪辑：熟练使用Adobe Premiere, Final Cut等专业非线性编辑软件，能独立完成视频的剪辑、特效、调色、字幕等后期制作，擅长制作宣传片、MV、纪录片、Vlog等。</p>
+            <p>数据分析：熟悉Python, Java, C等各种语言，了解机器学习的基本概念，熟悉常用操作系统和常用算法。</p>
+            <p>UI设计：熟悉Photoshop, Sketch等设计工具，能够完成简单的设计和原型制作。了解用户体验设计的基本原则，能够设计出美观、易用的界面。</p>
+        </div>
+        <div class="section">
+            <h3>个人图集</h3>
+            <div class="gallery">
+                <div class="gallery-item">夕阳美照</div>
+                <div class="gallery-item">美食佳肴</div>
+                <div class="gallery-item">风景照</div>
+                <div class="gallery-item">快乐时光</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
